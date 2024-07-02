@@ -93,6 +93,7 @@ consultas complexas repetidamente.
 **Views Materializadas:**
 
 *mview_top_canais_por_doacoes()* -> Armazena os canais que mais receberam doações, juntamente com o total dessas doações. Foi criada para melhorar o desempenho ao consultar frequentemente os canais que mais receberam doações, já que os dados são pré-calculados e armazenados.
+
 *mview_top_canais_por_doacoes()* -> Armazena os canais que mais receberam patrocínios, juntamente com o total desses patrocínios. Foi criada para otimizar o desempenho de consultas frequentes relacionadas aos canais mais patrocinados, uma vez que os dados são pré-agregados e armazenados.
 
 
