@@ -20,21 +20,16 @@ Este projeto contém a implementação de um banco de dados relacional para cata
    docker pull postgres
    docker run --name nome_db -e POSTGRES_PASSWORD=abcd1234 -d postgres
 
-2. **Conecte-se ao PostgreSQL**
+2. **Conecte-se ao Postgre**
    ```sh
    docker exec -it nome_db psql -U postgres
 
-3. **Conecte-se ao PostgreSQL**
+3. **Crie o banco de dados**
    ```sh
    CREATE DATABASE streamers_bd;
    \c streamers_bd
 
-4. **Crie o banco de dados**
-   ```sh
-   CREATE DATABASE streamers_bd;
-   \c streamers_bd
-
-5. **Execute os scripts, nessa ordem, para criar as tabelas**
+4. **Execute os scripts, nessa ordem, para criar as tabelas**
    ```sh
    \i /caminho/scripts/tables.sql
    \i /caminho/scripts/data.sql
@@ -80,6 +75,7 @@ Este projeto contém a implementação de um banco de dados relacional para cata
     
    Procedure 8:
    SELECT * FROM sp_top_canais_por_faturamento(5);
+
 
  **Relatório:**
 *Escolhas de Implementação*
